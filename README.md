@@ -1,6 +1,6 @@
-### ohw18-docker
+# docker
 
-# Cоздаем Dockerfile
+### Cоздаем Dockerfile
 В нем описываем процедуру подготовки образа: на образ alpine ставитcя nginx, подготавливается среда (установка нужных пакетов, создание пользователя, папок, файлов и т.п.).
 Запускается nginx
 
@@ -28,7 +28,7 @@ root@kim-test:/home/nikolay/otus/ohw18-docker# curl localhost:49156
         </body>
 </html>
 ```
-# Заливка образа на docker hub
+### Заливка образа на docker hub
 Авторизуемся на hub.docker.com
 ```
 root@kim-test:/home/nikolay/otus/ohw18-docker# docker login
@@ -46,7 +46,7 @@ Login Succeeded
 docker image tag mynginx:v1.16 nussnk/alpine-nginx-otus:1.0
 docker image push nussnk/alpine-nginx-otus:1.0
 ```
-# Проверка домашнего задания
+### Проверка домашнего задания
 Для проверки домашнего задания необходимо выкачать образ из хаба и создать+запустить контейнер
 ```
 docker pull nussnk/alpine-nginx-otus:1.0
