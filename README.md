@@ -5,7 +5,9 @@
 Запускается nginx
 
 Для проверки запустим контейнер 
-```docker run -it -d -P mynginx:v1.16```
+```
+docker run -it -d -P mynginx:v1.16
+```
 Посмотрим результат:
 ```
 root@kim-test:/home/nikolay/otus/ohw18-docker# docker ps -a
@@ -25,7 +27,7 @@ root@kim-test:/home/nikolay/otus/ohw18-docker# curl localhost:49156
                     Server is online
         </body>
 </html>
-
+```
 # Заливка образа на docker hub
 Авторизуемся на hub.docker.com
 ```
